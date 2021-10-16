@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GIFOS</title>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- ICONS -->
+		<link rel="stylesheet" href="../css/fonts.css" />
+		<!-- STYLES -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="icon" href="../assets/navbar/logo.svg" />
+	</head>
+	<body class="theme max-height">
+		<header class="navbar d-flex justify-between align-center">
+			<a href="../index.html">
+				<svg id="home-logo" width="75px" height="60px" viewBox="0 0 63 60" version="1.1">
+					<title>logo-desktop</title>
+					<desc>Created with Sketch.</desc>
+					<defs>
+						<polygon id="path-1" points="0.494619458 0.526112695 58.2715334 0.526112695 58.2715334 24.1695652 0.494619458 24.1695652"></polygon>
+					</defs>
+					<g id="GIFOS-G" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g transform="translate(-156.000000, -2463.000000)">
+							<g id="logo-desktop" transform="translate(156.000000, 2463.000000)">
+								<g id="Group-5">
+									<polygon
+										id="Fill-1"
+										fill="#5ED7C6"
+										points="0 -0.0002 0 59.1084314 59.1086314 59.1084314 59.1086314 46.4422961 54.8865863 46.4422961 54.8865863 54.8863863 4.2220451 54.8863863 4.2220451 4.2218451 42.220451 4.2218451 42.220451 16.8879804 54.8865863 16.8879804 54.8865863 25.332915 59.1086314 25.332915 59.1086314 12.6659353 46.4424961 -0.0002"
+									></polygon>
+									<g id="Group-4" transform="translate(9.000000, 20.000000)">
+										<g id="Clip-3"></g>
+										<text id="GIFOS" class="svg-gifos-fill" font-family="Roboto-Black, Roboto" font-size="18" font-weight="700">
+											<tspan x="3" y="21">GIFOS</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</a>
+
+			<nav>
+				<input class="d-none" type="checkbox" id="menu-input" />
+				<label id="icon-bars" for="menu-input">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<ul id="menu">
+					<li>
+						<button id="noc-mode" class="navbar-links">Modo Nocturno</button>
+						<hr />
+					</li>
+					<li>
+						<a id="favs-link" class="navbar-links" href="favoritos.html">Favoritos</a>
+						<hr />
+					</li>
+					<li>
+						<a id="my-gifs-link" class="navbar-links" href="mis-gifos.html">Mis GIFOS</a>
+						<hr />
+					</li>
+					<li>
+						<a class="btn-circle active" href="crear-gifo.html">
+							<span class="line-1"></span>
+							<span class="line-2"></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main id="create-gif" class="h-100 d-flex flex-column justify-center align-center">
+			<div id="img-camera-container" class="img-camera">
+				<div id="img-camera"></div>
+				<div id="img-luz-camera" class="img-luz-camera"></div>
+				<div id="img-tape1" class="animate-rotate paused"></div>
+				<div id="img-tape2" class="animate-rotate paused"></div>
+			</div>
+			<div id="img-tape"></div>
+			<div class="container-video">
+				<div class="d-flex flex-column justify-between">
+					<div class="corner corner-top-left"></div>
+					<div class="corner corner-bottom-left"></div>
+				</div>
+				<div class="content-text d-flex flex-column justify-center align-center">
+					<video id="video-camera" class="recording d-none"></video>
+					<img id="img-recording" src="#" width="480" height="320" class="d-none" alt="img-gif-recording..." />
+					<div id="overflow-gif" class="overflow-gifo d-none">
+						<div class="btn-actions d-flex justify-end align-center d-none">
+							<i class="btn-action icon-download-hover"></i>
+							<i class="btn-action icon-link"></i>
+						</div>
+						<i class="status-gifo icon-loader icon-status-gifo animate-rotate"></i>
+						<p class="status-gifo info-status-gifo">Estamos subiendo tu GIFO</p>
+					</div>
+					<div id="text-info">
+						<p class="title gifos-color">Aquí podrás <br />crear tus propios <span class="color-secundary">GIFOS</span></p>
+						<p class="title title-small title-outlined color-black">¡Crea tu GIFO en sólo 3 pasos! <br />(sólo necesitas una cámara para grabar un video)</p>
+					</div>
+				</div>
+				<div class="d-flex flex-column justify-between">
+					<div class="corner corner-top-right"></div>
+					<div class="corner corner-bottom-right"></div>
+				</div>
+			</div>
+			<div class="footer-create-gif">
+				<div></div>
+				<div class="steps">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+				</div>
+				<div id="timer" class="timer d-none">00:00:00</div>
+				<div id="btn-replay" class="btn-replay d-none">
+					<button class="navbar-links clear-button">REPETIR CAPTURA</button>
+				</div>
+			</div>
+			<div class="line-separator"></div>
+			<button id="btn-start" class="btn-rounded">COMENZAR</button>
+			<button id="btn-play" class="btn-rounded d-none">GRABAR</button>
+			<button id="btn-upload" class="btn-rounded d-none">SUBIR GIFO</button>
+			<button id="btn-transparent" class="btn-rounded btn-transparent d-none">--------</button>
+		</main>
+		<footer>
+			<div class="content-social">
+				<p class="title title-small title-outlined color-black pa">Compartir en:</p>
+				<div class="social-icons">
+					<a href="https://web.facebook.com/guillermoalberto.lealparada.7/" target="_blank"><i class="icon-facebook"></i></a>
+					<a href="https://twitter.com/?lang=es" target="_blank"><i class="icon-twitter"></i></a>
+					<a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="icon-instagram"></i></a>
+				</div>
+			</div>
+			<p class="pa">© GIFOS 2020 All Rights Reserved.</p>
+		</footer>
+
+		<!-- TODO SCRIPTS JS -->
+		<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+		<script type="module" src="../js/nocturne-mode.js"></script>
+		<script type="module" src="../js/create_gif/create-gif.js"></script>
+	</body>
+</html>

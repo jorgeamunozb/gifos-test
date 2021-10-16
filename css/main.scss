@@ -1,0 +1,24 @@
+// Abstracts
+@import './abstracts/common';
+@import './abstracts/media-queries';
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+//base
+@import './base/reset';
+
+//Layout
+@import './layout/content';
+@import './layout/header';
+@import './layout/footer';
+
+// Pages
+@import './pages/search';
+@import './pages/trending';
+@import './pages/create-gif';
+
+// Components
+@import './components/buttons';
+@import './components/titles';
+@import './components/gifs';
+@import './components/modal';
